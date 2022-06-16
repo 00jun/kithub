@@ -39,7 +39,7 @@ var aj = "";
 var al = "";
 
 var tpg = "";
-
+var count = 0;
 
 
 function get_tags() {
@@ -66,6 +66,7 @@ function get_tags() {
                 tpg = rtn;
                 // li 초기화
                 $("#keyword_list").empty();
+                count = 0;
                 
                 // li 추가
                 for(var i = 0; i < rtn.length; i++) {
@@ -81,7 +82,7 @@ function get_tags() {
     reader.readAsDataURL(selectFile); 
 
 }
-count = 0;
+
 
 function addList()  {
     var key_list = $("#keyword_list");

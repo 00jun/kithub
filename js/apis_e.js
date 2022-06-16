@@ -89,7 +89,7 @@ function addList()  {
     var fr = document.forms['fr'];
     
     key_list.append("<li>");
-    key_list.append("<img class='quiz_sound' src='/images/스피커.png' onclick=request_speaking(fr['"+count+"_a'].value)>");
+    key_list.append("<img class='quiz_sound' src='./images/스피커.png' onclick=request_speaking(fr['"+count+"_a'].value)>");
     key_list.append("<input class='quiz' type='text' name='"+count+"_u' value=''>");
     key_list.append("<input class='quiz' type='hidden' name='"+count+"_a' value='"+ak+"'>");
     key_list.append("<input class='quiz_check' id='check_"+count+"' type='text' name='"+count+"_c' value=''>");

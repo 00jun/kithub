@@ -83,7 +83,13 @@ function get_tags() {
                     for(var i = 0; i < rtn.length; i++) {
                         ak = rtn[i]; // ak = 동물
                         for(var j = 0; j < ak.length; j++) {
-                            al += Hangul.disassemble(ak[j])[1];
+                            if (Hangul.disassemble(ak[j])[1] != undefined) {
+                                al += Hangul.disassemble(ak[j])[1];
+                            }
+                            else
+                            {
+                                al += ak[j];
+                            }
                         }
                         addList();
                     }

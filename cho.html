@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2020108257</title>
+        <link rel="stylesheet" href="cho.css">
+        <script src="js/hangul.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/apis_c.js"></script>
+    </head>
+    <header>
+        <a class="logos" href="./index.html"><img id="logo" src="images/github.png"><em>Kithub</em></a>
+        <nav>
+            <a href="./team.html">Team</a>
+            <a href="./Introduce.html">Introduce</a>
+            <a href="./license.html">License</a>
+            <a href="./QA.html">Q & A</a>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <div class="image-container">
+                <div class="difficulty">
+                    <label class="difficulty-radio"><span>난이도</span></label>
+                    <label class="difficulty-radio"><input type="radio" name="difficulty_star" value="난이도1" onclick="get_tags()" checked="checked"><span>★</span></label>
+                    <label class="difficulty-radio"><input type="radio" name="difficulty_star" value="난이도2" onclick="get_tags()"><span>★★</span></label>
+                    <label class="difficulty-radio"><input type="radio" name="difficulty_star" value="난이도3" onclick="get_tags()"><span>★★★</span></label>
+                </div>
+                    <img style="width: 500px; height: 550px;" id="preview-image" src="https://dummyimage.com/400x450/000000/ffffff.png&text=Preview">
+                    <input style="display: block;" type="file" id="image" accept="image/*">
+                </div>
+                <script src="/js/imageinput.js"></script>
+            <div class="keyword_container">
+                <form name="fr">
+                    <div class="keyword">
+                        <ul id="keyword_list">
+                        </ul>
+                    </div>
+                </form>
+                <button id="answer_send" onclick="">제출하기</button>
+                <script src="/js/check.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

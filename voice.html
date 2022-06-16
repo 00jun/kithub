@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2020108257</title>
+        <link rel="stylesheet" href="voice.css">
+        <script src="js/hangul.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/apis.js"></script>
+    </head>
+    <header>
+        <a class="logos" href="./index.html"><img id="logo" src="images/github.png"><em>Kithub</em></a>
+        <nav>
+            <a href="./team.html">Team</a>
+            <a href="./Introduce.html">Introduce</a>
+            <a href="./license.html">License</a>
+            <a href="./QA.html">Q & A</a>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <div class="image-container">
+                <img style="width: 350px; height: 300px;" id="preview-image" src="https://dummyimage.com/400x450/000000/ffffff.png&text=Preview">
+                <br>
+                <input style="display: blcok;" type="file" id="image" accept="image/*">
+                <div class="filebox"> 
+                </div>
+                <script src="/js/imageinput.js"></script>
+            </div>
+            <div class="image-contents">
+                <ul>문 제<button id="hint" onclick=""><img style="width: 20px;" src="images/hint.jpg">hint</button></ul>
+                <script src="/js/hint.js"></script>
+                    <form name="fr">
+                    <li>
+                        <!- 정답 입력>
+                        <input class="answer-input" type="text" name="one-q" value="">
+                        <!- 힌트 제공>
+                        <input class="answer-hint" type="text" name="one-h" value="*hint*">
+                        <!- 정답 판별>
+                        <input class="correct" id="ck1" type="text" name="one-c" value="o">
+                        <img src="/images/스피커.png" onclick="request_speaking(fr['one-a'].value)" style="padding-top: 10px; padding-left: 20px; height: 40px; position: flex;">
+                        <!- 정답 (표시는 안됨)>
+                        <input class="answer" id="ak1" type="hidden" name="one-a" value="">
+                    </li>
+                    <li>
+                        <input class="answer-input" type="text" name="two-q" value="">
+                        <input class="answer-hint" type="text" name="two-h" value="*hint*">
+                        <input class="correct" id="ck2" type="text" name="two-c" value="o">
+                        <img src="/images/스피커.png" onclick="request_speaking(fr['two-a'].value)" style="padding-top: 10px; padding-left: 20px; height: 40px; position: flex;">
+                        <input class="answer" type="hidden" name="two-a" value="">
+                    </li>
+                    <li>
+                        <input class="answer-input" type="text" name="three-q" value="">
+                        <input class="answer-hint" type="text" name="three-h" value="*hint*">
+                        <input class="correct" type="text" id="ck3" name="three-c" value="o">
+                        <img src="/images/스피커.png" onclick="request_speaking(fr['three-a'].value)" style="padding-top: 10px; padding-left: 20px; height: 40px; position: flex;">
+                        <input class="answer" type="hidden" name="three-a" value="">
+                    </li>
+                    <li>
+                        <input class="answer-input" type="text" name="four-q" value="">
+                        <input class="answer-hint" type="text" name="four-h" value="*hint*">
+                        <input class="correct" type="text" id="ck4" name="four-c" value="o">
+                        <img src="/images/스피커.png" onclick="request_speaking(fr['four-a'].value)" style="padding-top: 10px; padding-left: 20px; height: 40px; position: flex;">
+                        <input class="answer" type="hidden" name="four-a" value="">
+                    </li>
+                    </form>
+                <button id="answer_send" onclick="get_tags()">제출하기</button>
+                <script src="/js/check.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

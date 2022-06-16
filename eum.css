@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Hahmlet-Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Hahmlet-Black";
+}
+
+#logo {
+    height: 33px;
+    width: 33px;
+    margin-right: 20px;
+}
+
+.logos {
+    margin-left: 20px;
+    margin-top: -10px;
+    width: 300px;
+    height: 100%;
+    font-size: 30pt;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14pt;
+    color:white;
+}
+
+nav > a {
+    margin: 10px;
+}
+
+/* 여기까지 메뉴바 */
+
+body {
+    padding: 1rem;
+    padding-top: 75px;
+    background: #EEE;
+}
+
+
+li {
+    list-style: none;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#image {
+    margin-top: 30px;
+}
+
+.image-container {
+
+}
+
+#preview-image{
+    margin-top: 120px;
+}
+
+.keyword {
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.quiz {
+    width: 300px;
+    height: 80px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: burlywood;
+    border: 3px solid black;
+    font-size: 30pt;
+}
+
+.quiz_sound{
+    width: 60px;
+    height: 80px;
+    padding-top: 30px;
+    margin-right: 20px;
+}
+
+.quiz_check {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    font-size: 30pt;
+}
+
+.user_answer {
+    display: inline;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    background-color: burlywood;
+    border: 3px solid black;
+    font-size: 30pt;
+}
+
+#answer_send {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 480px;
+    height: 80px;
+    font-size: 30pt;
+    border: 3px solid black;
+}
+
+.difficulty {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.difficulty-radio input[type="radio"]{
+    display:none;
+    
+}
+
+.difficulty-radio input[type="radio"] + span{
+    display:inline-block;
+    background:white;
+    border:1px solid black;
+    text-align:center;
+    width: 70px;
+    height: 35px;
+    line-height:33px;
+    font-weight:500;
+}
+
+.difficulty-radio input[type="radio"]:checked + span{
+    border:1px solid #23a3a7;
+    background:#000000;
+    color:#FFFF00;
+}
+
+/*
+주석 처리
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'SF_HambakSnow';
+}
+-----------------------------------------------------------------------------------------------------------------
+영어 폰트
+
+한글 제목 폰트
+
+// 폰트 이름: 함렛 Black
+
+@font-face {
+    font-family: 'Hahmlet-Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+한글 본문 폰트
+*/

@@ -80,7 +80,8 @@ function get_tags() {
     };
 
     reader.readAsDataURL(selectFile); 
-
+    score = 0;
+    scoreView.textContent=score;
 }
 
 
